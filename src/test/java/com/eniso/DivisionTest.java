@@ -9,20 +9,19 @@ import org.junit.Test;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-/**d(0, 1))
+/**
  *
  * @author Houssem
  */
 //hhhhhh
-public class AdditionTest {
+public class DivisionTest {
 //hhhhhh
     CalculatorService service = new CalculatorService();
-
-    //hhhhhh
+//hhhhhh
     @Test
     public void Test() {
-        assertEquals("2.0", service.addition(1, 1));
-        assertEquals("201.0", service.addition(200, 1));
+        assertEquals("50.0", service.division(150, 3));
+        assertEquals("0.0", service.division(0, 1));
     }
 
 }

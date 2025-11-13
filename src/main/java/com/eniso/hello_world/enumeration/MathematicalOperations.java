@@ -1,27 +1,40 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.eniso.hello_world.enumeration;
 
 /**
- *
- * @author Houssem
+ * Enum representing the basic mathematical operations.
+ * Each operation has a display label.
+ * @author Houssem.
  */
 public enum MathematicalOperations {
-    ADDITION("Addition"),
-    SUBTRACTION("Subtraction"),
-    MULTIPLICATION("Multiplication"),
-    DIVISION("Division");
-    private String label;
 
-    private MathematicalOperations(String label) {
-        this.label = label;
+    /** Addition operation. */
+    ADDITION("Addition"),
+
+    /** Subtraction operation. */
+    SUBTRACTION("Subtraction"),
+
+    /** Multiplication operation. */
+    MULTIPLICATION("Multiplication"),
+
+    /** Division operation. */
+    DIVISION("Division");
+
+    /** Display label for the operation. */
+    private final String label;
+
+    /**
+     * Constructor for the enum.
+     * @param lbl the display label for the operation
+     */
+    MathematicalOperations(final String lbl) {
+        this.label = lbl;
     }
 
+    /**
+     * Returns the label of the operation.
+     * @return label as string
+     */
     public String getLabel() {
         return label;
     }
-
 }

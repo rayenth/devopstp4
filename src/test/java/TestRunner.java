@@ -13,13 +13,17 @@ import org.junit.runner.notification.Failure;
  *
  * @author Houssem
  */
+//hhhhhh
 public class TestRunner {
 
+
+//hhhhhh
     public static void main(String[] args) {
         getTestResult(AdditionTest.class);
         
     }
     
+    //hhhhhh
     public static void getTestResult(Class clazz){
         Result result = JUnitCore.runClasses(clazz);
 
